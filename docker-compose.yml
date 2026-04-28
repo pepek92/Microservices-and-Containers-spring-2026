@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  task-service:
+    build: ./task-service
+    container_name: task-service
+    ports:
+      - "3000:3000"
+    networks:
+      - microservice-network
+
+  user-service:
+    build: ./user-service
+    container_name: user-service
+    ports:
+      - "3001:3001"
+    networks:
+      - microservice-network
+
+  ui-service:
+    build: ./ui-service
+    container_name: ui-service
+    ports:
+      - "3002:3002"
+    networks:
+      - microservice-network
+
+networks:
+  microservice-network:
+    driver: bridge
