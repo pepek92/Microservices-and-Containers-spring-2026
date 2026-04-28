@@ -56,7 +56,7 @@ app.get("/", (req, res) => {
         </section>
 
         <section>
-          <h3>📋 Task Details</h3>
+          <h3>Task Details</h3>
           <div id="task-details">
             <em>Select a task</em>
           </div>

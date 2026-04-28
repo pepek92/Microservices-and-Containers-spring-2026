@@ -24,7 +24,7 @@ db.serialize(() => {
 
   db.run(
     `INSERT OR IGNORE INTO users (id, name) VALUES
-      (1, 'Petteri Kivelä'),
+      (1, 'Mickey Mouse'),
       (2, 'Aku Ankka'),
       (3, 'Donald Duck')`
   );
